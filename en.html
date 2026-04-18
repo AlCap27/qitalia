@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q-Italia — English Summary | Civic Technology & Democratic Innovation</title>
+<meta name="description" content="Q-Italia is an Italian political movement using AI-driven analytical tools to bridge the complexity gap in democratic governance. A live case study in participatory civic technology.">
+<link rel="canonical" href="https://qitalia.org/en.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Q-Italia: A Civic Technology Lab for Democratic Innovation","description":"English overview of Q-Italia movement and PoliSim analytical engine for international civic tech audiences","author":{"@type":"Organization","name":"Q-Italia","url":"https://qitalia.org"},"inLanguage":"en","about":[{"@type":"Thing","name":"Civic Technology"},{"@type":"Thing","name":"Democratic Innovation"},{"@type":"Thing","name":"AI Governance"},{"@type":"Thing","name":"Political Communication"}]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --nero:#0a0806;--rosso:#d40000;--bianco:#f5f2ee;
+  --grigio:#8a8580;--linea:#2a2520;--mid:#5a5550;
+  --bebas:'Bebas Neue',sans-serif;
+  --sans:'DM Sans',system-ui,sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+html{scroll-behavior:smooth}
+body{background:var(--nero);color:var(--bianco);font-family:var(--sans);font-weight:300;line-height:1.7}
+nav{padding:20px 48px;border-bottom:0.5px solid var(--linea);display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:rgba(10,8,6,.95);backdrop-filter:blur(12px);z-index:100}
+.nav-logo{display:flex;align-items:center;gap:14px;text-decoration:none}
+.nav-logo-text{font-family:var(--bebas);font-size:20px;letter-spacing:3px;color:var(--bianco)}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-links a{font-family:var(--mono);font-size:10px;letter-spacing:2px;color:var(--grigio);text-decoration:none;text-transform:uppercase}
+.nav-links a:hover{color:var(--bianco)}
+.nav-it{border:0.5px solid var(--linea);padding:6px 14px}
+.nav-ps{color:var(--rosso)!important;border:0.5px solid var(--rosso);padding:6px 14px}
+
+.hero{padding:120px 48px 80px;border-bottom:0.5px solid var(--linea);max-width:900px}
+.hero-eyebrow{font-family:var(--mono);font-size:9px;letter-spacing:4px;color:var(--rosso);text-transform:uppercase;margin-bottom:16px}
+.hero-title{font-family:var(--bebas);font-size:clamp(56px,9vw,120px);line-height:.92;color:var(--bianco);margin-bottom:32px}
+.hero-title em{color:var(--rosso);font-style:normal}
+.hero-lead{font-size:17px;color:var(--grigio);line-height:1.85;max-width:720px;margin-bottom:24px}
+.hero-lead strong{color:var(--bianco);font-weight:400}
+
+.tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:32px}
+.tag{font-family:var(--mono);font-size:9px;letter-spacing:2px;color:var(--grigio);border:0.5px solid var(--linea);padding:4px 12px;text-transform:uppercase}
+.tag-red{border-color:var(--rosso);color:var(--rosso)}
+
+.page{max-width:860px;margin:0 auto;padding:80px 48px}
+
+.section{margin-bottom:80px;padding-bottom:80px;border-bottom:0.5px solid var(--linea)}
+.section:last-child{border-bottom:none}
+.section-label{font-family:var(--mono);font-size:9px;letter-spacing:4px;color:var(--rosso);text-transform:uppercase;margin-bottom:12px}
+.section-title{font-family:var(--bebas);font-size:clamp(36px,5vw,64px);color:var(--bianco);margin-bottom:24px;line-height:1}
+h3{font-family:var(--bebas);font-size:24px;color:var(--bianco);margin:28px 0 10px;letter-spacing:0.5px}
+p{font-size:15px;color:var(--mid);line-height:1.85;margin-bottom:14px}
+p strong{color:var(--bianco);font-weight:400}
+ul{margin:0 0 16px 20px}
+li{font-size:14px;color:var(--mid);line-height:1.8;margin-bottom:6px}
+li strong{color:var(--bianco);font-weight:400}
+
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--linea);margin:32px 0}
+.metric{background:var(--nero);padding:28px 24px}
+.metric-num{font-family:var(--bebas);font-size:48px;color:var(--rosso);line-height:1}
+.metric-label{font-family:var(--mono);font-size:10px;color:var(--grigio);letter-spacing:2px;text-transform:uppercase;margin-top:4px}
+
+.callout{background:#0f0b08;border-left:3px solid var(--rosso);padding:24px 28px;margin:28px 0}
+.callout p{font-size:15px;color:var(--grigio);font-style:italic;margin:0}
+.callout strong{color:var(--bianco);font-weight:400;font-style:normal}
+
+.principle-row{display:grid;grid-template-columns:40px 1fr;gap:16px;padding:16px 0;border-bottom:0.5px solid var(--linea)}
+.principle-row:last-child{border-bottom:none}
+.p-num{font-family:var(--bebas);font-size:24px;color:rgba(212,0,0,.3);line-height:1.2}
+.p-text{font-size:13px;color:var(--mid);line-height:1.7}
+.p-text strong{color:var(--bianco);font-weight:400;display:block;margin-bottom:2px}
+
+.cta-section{background:#0f0b08;border-top:0.5px solid var(--linea);padding:80px 48px;text-align:center}
+.cta-title{font-family:var(--bebas);font-size:clamp(40px,7vw,88px);color:var(--bianco);line-height:.92;margin-bottom:16px}
+.cta-sub{font-size:14px;color:var(--grigio);margin-bottom:40px;max-width:560px;margin-left:auto;margin-right:auto}
+.btn-r{display:inline-flex;align-items:center;gap:10px;background:var(--rosso);color:var(--bianco);font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:16px 32px;text-decoration:none;margin:6px}
+.btn-s{display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--bianco);font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:16px 32px;text-decoration:none;border:0.5px solid var(--linea);margin:6px}
+
+footer{padding:32px 48px;border-top:0.5px solid var(--linea);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-logo{font-family:var(--bebas);font-size:16px;letter-spacing:3px;color:var(--grigio)}
+.footer-copy{font-family:var(--mono);font-size:9px;color:rgba(138,133,128,.4)}
+.footer-links{display:flex;gap:20px}
+.footer-links a{font-family:var(--mono);font-size:9px;letter-spacing:2px;color:var(--grigio);text-decoration:none;text-transform:uppercase}
+.footer-links a:hover{color:var(--bianco)}
+
+@media(max-width:768px){
+  nav,.hero,.page,.cta-section,footer{padding-left:24px;padding-right:24px}
+  .metric-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/">
+    <span class="nav-logo-text">Q-Italia</span>
+  </a>
+  <div class="nav-links">
+    <a href="/" class="nav-it">← Italiano</a>
+    <a href="/manifesto.html">Manifesto</a>
+    <a href="https://polisim.dev" target="_blank" class="nav-ps">PoliSim ↗</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-eyebrow">English Summary · Civic Technology · Italy 2026</div>
+  <h1 class="hero-title">A new<br>standard for<br><em>digital</em><br>democracy.</h1>
+  <p class="hero-lead">
+    <strong>Q-Italia</strong> is an Italian political movement built on 14 constitutional principles and powered by a proprietary analytical engine (<strong>PoliSim</strong>) to overcome social media polarisation and bridge the complexity gap in democratic governance.
+  </p>
+  <p class="hero-lead">
+    It is the first Italian political initiative to combine a structured normative framework with AI-assisted communication optimisation — positioning itself as a <strong>live laboratory for participatory civic technology</strong>.
+  </p>
+  <div class="tag-row">
+    <span class="tag tag-red">Civic Tech</span>
+    <span class="tag tag-red">Democratic Innovation</span>
+    <span class="tag tag-red">AI Governance</span>
+    <span class="tag">Italy · 2026</span>
+    <span class="tag">Open Methodology</span>
+    <span class="tag">Transparent AI</span>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- THE PROBLEM -->
+  <div class="section">
+    <div class="section-label">The Problem</div>
+    <h2 class="section-title">Democracy was designed<br>for a simpler world.</h2>
+    <p>20th-century democratic institutions were built for societies with low informational complexity. Today, the complexity of reality has outpaced the cognitive capacity of those institutions. Legislation accumulates without logic. Decisions are made without data. Public trust erodes without remedy.</p>
+    <p>Italy exemplifies this tension: one of the most legally complex countries in the OECD, with one of the highest rates of political abstentionism among younger generations, and a public discourse increasingly dominated by algorithmic amplification of polarised content.</p>
+    <div class="callout">
+      <p><strong>"The artificial intelligence can bridge that gap — or make it irreversible. This project chooses the first path."</strong> — Q-Italia founding statement, 2026</p>
+    </div>
+  </div>
+
+  <!-- THE FRAMEWORK -->
+  <div class="section">
+    <div class="section-label">The Framework</div>
+    <h2 class="section-title">14 principles.<br>Three concentric circles.</h2>
+    <p>Q-Italia's founding charter organises its principles in three concentric circles representing a logical dependency hierarchy — inner circles enable outer ones. Every proposal, alliance, and internal decision must pass coherence checks against all three levels.</p>
+
+    <div class="metric-grid">
+      <div class="metric">
+        <div class="metric-num">14</div>
+        <div class="metric-label">Constitutional principles</div>
+      </div>
+      <div class="metric">
+        <div class="metric-num">3</div>
+        <div class="metric-label">Concentric circles</div>
+      </div>
+      <div class="metric">
+        <div class="metric-num">v3.1</div>
+        <div class="metric-label">Current version</div>
+      </div>
+    </div>
+
+    <h3>Circle 1 — Decision Architecture</h3>
+    <p>How to govern when complexity exceeds human comprehension. Principles covering AI as a common good, legislative simplification via AI, immutable transparency through distributed registries, and citizen informational sovereignty.</p>
+
+    <h3>Circle 2 — Rational Coexistence</h3>
+    <p>Rules of collective life derived from logic before ethics. Rational pacifism (war as irrational resource allocation), regenerative justice (neuroscience-based rehabilitation over punishment), universal healthcare as a precondition for liberty, and proportionality between power and accountability.</p>
+
+    <h3>Circle 3 — Societal Vision</h3>
+    <p>The world to build when architecture and rules are in place. Structural equality, post-GDP welfare metrics, permanent cultural renaissance, landscape ecology, and universal accessibility.</p>
+
+    <div style="margin-top:32px">
+      <div class="principle-row">
+        <div class="p-num">01</div>
+        <div class="p-text"><strong>AI as a Common Good</strong> — Code, training data, and economic benefits must be accessible, auditable, and democratically redistributed.</div>
+      </div>
+      <div class="principle-row">
+        <div class="p-num">02</div>
+        <div class="p-text"><strong>Legislative Distillation</strong> — AI-assisted rewriting of civil and criminal codes to eliminate ad-personam laws and accumulated contradictions.</div>
+      </div>
+      <div class="principle-row">
+        <div class="p-num">05</div>
+        <div class="p-text"><strong>Rationalist Pacifism</strong> — Organised violence as irrational resource allocation. Italy as a diplomatic mediation hub, not a military force projection.</div>
+      </div>
+      <div class="principle-row">
+        <div class="p-num">09</div>
+        <div class="p-text"><strong>Power-Responsibility Proportionality</strong> — Those who decide more, answer more. Public mandate as a trust pact with the collective.</div>
+      </div>
+      <div class="principle-row">
+        <div class="p-num">11</div>
+        <div class="p-text"><strong>Beyond Infinite Growth</strong> — Progress measured in health, education, environmental quality, leisure, and social cohesion — not GDP. Universal basic income exploration.</div>
+      </div>
+    </div>
+
+    <p style="margin-top:24px"><a href="/manifesto.html" style="color:var(--rosso);text-decoration:none;font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase">Read the full charter in Italian →</a></p>
+  </div>
+
+  <!-- POLISIM -->
+  <div class="section">
+    <div class="section-label">The Analytical Engine</div>
+    <h2 class="section-title">PoliSim —<br>from principles<br>to data.</h2>
+    <p>Q-Italia's founding team developed <strong>PoliSim</strong> (polisim.dev) as the technical proof-of-concept that rational political communication is possible. PoliSim is a SaaS platform combining electoral modelling, demographic segmentation, and AI-assisted message optimisation.</p>
+
+    <h3>Stage 1 — Electoral Simulation</h3>
+    <p>Seat distribution modelling for Italy's 2027 elections across 147 Camera and 74 Senato uninominal constituencies. Powered by official Ministry of Interior data (Eligendo OpenData), ensemble Ridge + Random Forest calibrated on ISTAT 2021 census data, and Multilevel Regression with Poststratification (MRP — Wang et al., 2015). Verifies both-chamber majority simultaneously — the real condition for Italian government formation.</p>
+
+    <h3>Stage 2 — Demographic Profiling</h3>
+    <p>Psychographic profiles for 7 target segments (political, NGO donors, CSR, brand consumers) anchored to measured ISTAT data — not qualitative assumptions. Variables include unemployment rates, poverty indices, NEET indicators, and educational attainment per constituency.</p>
+
+    <h3>Stage 3 — Message Optimisation</h3>
+    <p>Four message variants generated per topic using Entman's framing theory (1993) — economic, values-based, practical, emotional — and scored by domain-specific metrics. Powered by Claude Sonnet 4.6 (Anthropic). Declared limitations: unvalidated LLM layer, expert-calibrated scoring weights, simplified swing model.</p>
+
+    <div class="callout">
+      <p><strong>Declared transparency principle:</strong> PoliSim publicly documents its methodological limitations at launch — unvalidated LLM layer, expert-calibrated weights, simplified swing model. Transparency on methodology is a design principle, not a weakness.</p>
+    </div>
+
+    <h3>Technical Stack</h3>
+    <ul>
+      <li><strong>Data sources:</strong> Eligendo OpenData (Ministry of Interior), ISTAT Permanent Census 2021, Labour Force Survey</li>
+      <li><strong>ML models:</strong> Ridge Regression + Random Forest ensemble, MRP post-stratification</li>
+      <li><strong>AI layer:</strong> Claude Sonnet 4.6 (Anthropic API) for message generation and evaluation</li>
+      <li><strong>Infrastructure:</strong> FastAPI on VPS, Vercel for frontend, Cloudflare for DNS/security</li>
+      <li><strong>Academic references:</strong> Wang et al. (2015), Entman (1993), Graefe et al. (2021), AEI (2025), MIT Technology Review (2025)</li>
+    </ul>
+  </div>
+
+  <!-- THE DISTILLATORE -->
+  <div class="section">
+    <div class="section-label">Live Deployment</div>
+    <h2 class="section-title">The Distillatore —<br>automated civic<br>discourse.</h2>
+    <p>Q-Italia operates a live automated content system — the <strong>Distillatore</strong> — that monitors Italian political discourse on X (Twitter), generates responses anchored to the 14 constitutional principles, and publishes them after mandatory human review.</p>
+
+    <p>Architecture: Topic Engine (7 thematic macro-areas with daily rotation) → Apify web scraping for relevant public posts → Claude Sonnet generates a calibrated response → human-in-the-loop approval via Telegram bot → publication on <a href="https://x.com/italia_a741" target="_blank" style="color:var(--rosso);text-decoration:none">@italia_a741</a>.</p>
+
+    <p>Every published post is traceable to a specific constitutional principle. The system explicitly prevents fully autonomous publication — human approval is architecturally mandatory, not optional.</p>
+
+    <div class="metric-grid">
+      <div class="metric">
+        <div class="metric-num">7</div>
+        <div class="metric-label">Thematic macro-areas</div>
+      </div>
+      <div class="metric">
+        <div class="metric-num">2h</div>
+        <div class="metric-label">Monitoring cycle</div>
+      </div>
+      <div class="metric">
+        <div class="metric-num">100%</div>
+        <div class="metric-label">Human-approved posts</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CIVIC TECH RELEVANCE -->
+  <div class="section">
+    <div class="section-label">Relevance for Public Sector Innovation</div>
+    <h2 class="section-title">A replicable<br>model.</h2>
+    <p>The Q-Italia + PoliSim ecosystem demonstrates several principles of direct relevance to public sector innovation, participatory governance, and democratic technology:</p>
+
+    <ul>
+      <li><strong>Open methodology:</strong> All analytical limitations are publicly declared. The system documents what it does not know — a principle transferable to public-sector AI deployments.</li>
+      <li><strong>Human-in-the-loop by design:</strong> Automated content generation with mandatory human approval before publication. A model for responsible AI in civic communication.</li>
+      <li><strong>Data sovereignty:</strong> All demographic profiling uses official public data (ISTAT, Ministry of Interior). No private data collection, no micro-targeting of citizens.</li>
+      <li><strong>Dual validation:</strong> Electoral simulations verify both parliamentary chambers simultaneously — reflecting the real constitutional condition for government formation, not simplified single-chamber models.</li>
+      <li><strong>Principle-anchored AI:</strong> Every AI-generated output is traceable to a specific constitutional principle. A model for values-aligned automated communication.</li>
+      <li><strong>GDPR-by-design:</strong> The Data Shield anonymisation tool (polisim.dev/anonimizza.html) processes uploaded datasets entirely client-side — zero server contact, full compliance with GDPR Art. 4.5, 89, 25.</li>
+    </ul>
+
+    <div class="callout">
+      <p>We are testing a new standard for digital democracy in Italy: a 14-principle manifesto (Q-Italia) using a proprietary optimisation engine (PoliSim) to overcome social polarisation — with full methodological transparency and mandatory human oversight at every step.</p>
+    </div>
+  </div>
+
+  <!-- ROADMAP -->
+  <div class="section">
+    <div class="section-label">Roadmap</div>
+    <h2 class="section-title">What comes next.</h2>
+    <ul>
+      <li><strong>Shapefile integration:</strong> Swing modelling at individual constituency level (currently macro-area), reducing projected error from ±3-5 seats to ±2-3 seats per chamber.</li>
+      <li><strong>Persistent memory layer:</strong> LightRAG / LLM-Wiki pattern (Karpathy) for long-term memory of political positions, declarations, and territorial contexts.</li>
+      <li><strong>Proprietary dataset upload:</strong> GDPR-compliant pipeline for institutions to upload and anonymise their own datasets for segment analysis.</li>
+      <li><strong>Social listening calibration:</strong> Behavioural data integration for psychographic segment refinement.</li>
+      <li><strong>Non-political domain expansion:</strong> PoliSim's message optimisation engine adapted for NGO fundraising, corporate ESG communication, and brand positioning.</li>
+    </ul>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="section">
+    <div class="section-label">Contact & Collaboration</div>
+    <h2 class="section-title">Open to<br>collaboration.</h2>
+    <p>Q-Italia and PoliSim are open to collaboration with public sector innovation bodies, civic technology organisations, academic researchers, and international policy networks interested in AI-assisted democratic governance.</p>
+    <p>For research partnerships, case study requests, or methodology review: <a href="mailto:info@qitalia.org" style="color:var(--rosso);text-decoration:none">info@qitalia.org</a></p>
+    <p>For PoliSim platform access and commercial enquiries: <a href="mailto:info@polisim.dev" style="color:var(--rosso);text-decoration:none">info@polisim.dev</a></p>
+  </div>
+
+</div>
+
+<div class="cta-section">
+  <h2 class="cta-title">Rationality and<br>humanism are<br>not in contradiction.</h2>
+  <p class="cta-sub">Q-Italia exists to hold all three levels together. Not a technocratic party. Not a utopian party. A party that believes the most powerful technology in history must be governed by both.</p>
+  <div>
+    <a href="/manifesto.html" class="btn-r">Full Charter (Italian) →</a>
+    <a href="https://polisim.dev" target="_blank" class="btn-s">PoliSim Platform ↗</a>
+    <a href="mailto:info@qitalia.org" class="btn-s">Contact ↗</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Q-Italia</div>
+  <div class="footer-copy">© 2026 Q-Italia · Italy · v3.1</div>
+  <div class="footer-links">
+    <a href="/">Italiano</a>
+    <a href="/manifesto.html">Manifesto</a>
+    <a href="https://polisim.dev" target="_blank">PoliSim</a>
+    <a href="mailto:info@qitalia.org">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>
