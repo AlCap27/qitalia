@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q-Italia — Manifesto e Carta dei Principi Costitutivi</title>
+<meta name="description" content="Il Manifesto fondativo e la Carta dei 14 Principi Costitutivi di Q-Italia: intelligenza artificiale come bene comune, razionalità pacifista, giustizia rigenerativa, uguaglianza strutturale. Italia 2026.">
+<link rel="canonical" href="https://qitalia.org/manifesto">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Manifesto e Carta dei Principi di Q-Italia","description":"14 principi costitutivi organizzati in tre cerchi concentrici: architettura decisionale, convivenza razionale, visione di società","author":{"@type":"Organization","name":"Q-Italia"},"publisher":{"@type":"Organization","name":"Q-Italia","url":"https://qitalia.org"},"inLanguage":"it"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --nero:#0a0806;--rosso:#d40000;--bianco:#f5f2ee;
+  --grigio:#8a8580;--linea:#2a2520;--mid:#3a3530;
+  --bebas:'Bebas Neue',sans-serif;
+  --sans:'DM Sans',system-ui,sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+html{scroll-behavior:smooth}
+body{background:var(--nero);color:var(--bianco);font-family:var(--sans);font-weight:300;line-height:1.7}
+nav{padding:20px 48px;border-bottom:0.5px solid var(--linea);display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:rgba(10,8,6,.95);backdrop-filter:blur(12px);z-index:100}
+.nav-logo{display:flex;align-items:center;gap:14px;text-decoration:none}
+.nav-logo img{width:32px;height:32px;border-radius:50%}
+.nav-logo-text{font-family:var(--bebas);font-size:20px;letter-spacing:3px;color:var(--bianco)}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-links a{font-family:var(--mono);font-size:10px;letter-spacing:2px;color:var(--grigio);text-decoration:none;text-transform:uppercase}
+.nav-links a:hover{color:var(--bianco)}
+.nav-polisim{color:var(--rosso)!important;border:0.5px solid var(--rosso);padding:6px 14px}
+
+.hero{padding:120px 48px 80px;border-bottom:0.5px solid var(--linea)}
+.hero-eyebrow{font-family:var(--mono);font-size:9px;letter-spacing:4px;color:var(--rosso);text-transform:uppercase;margin-bottom:16px}
+.hero-title{font-family:var(--bebas);font-size:clamp(64px,10vw,140px);line-height:.92;color:var(--bianco);margin-bottom:24px}
+.hero-sub{max-width:640px;font-size:16px;color:var(--grigio);line-height:1.8}
+
+.manifesto-section{max-width:800px;margin:0 auto;padding:80px 48px}
+
+.manifesto-intro{margin-bottom:80px;padding-bottom:80px;border-bottom:0.5px solid var(--linea)}
+.manifesto-intro h2{font-family:var(--bebas);font-size:48px;color:var(--bianco);margin-bottom:24px}
+.manifesto-intro p{font-size:15px;color:var(--grigio);line-height:1.9;margin-bottom:16px}
+
+.cerchio{margin-bottom:80px}
+.cerchio-label{font-family:var(--mono);font-size:9px;letter-spacing:4px;color:var(--rosso);text-transform:uppercase;margin-bottom:8px}
+.cerchio-title{font-family:var(--bebas);font-size:36px;color:var(--bianco);margin-bottom:8px}
+.cerchio-desc{font-size:13px;color:var(--mid);font-style:italic;margin-bottom:48px;padding-bottom:24px;border-bottom:0.5px solid var(--linea)}
+
+.principio{margin-bottom:56px;padding-bottom:56px;border-bottom:0.5px solid var(--linea)}
+.principio:last-child{border-bottom:none}
+.principio-header{display:flex;align-items:baseline;gap:20px;margin-bottom:16px}
+.principio-num{font-family:var(--bebas);font-size:56px;color:rgba(212,0,0,.2);line-height:1;min-width:60px}
+.principio-nome{font-family:var(--bebas);font-size:32px;color:var(--bianco);letter-spacing:0.5px}
+.principio-body{font-size:15px;color:var(--grigio);line-height:1.9;margin-bottom:12px}
+.principio-nota{font-size:12px;color:var(--mid);font-style:italic;border-left:2px solid var(--rosso);padding-left:12px;margin-top:12px}
+
+.cta-section{background:#0f0b08;border-top:0.5px solid var(--linea);padding:80px 48px;text-align:center}
+.cta-title{font-family:var(--bebas);font-size:clamp(48px,8vw,100px);color:var(--bianco);line-height:.92;margin-bottom:32px}
+.cta-title em{color:var(--rosso);font-style:normal}
+.btn-r{display:inline-flex;align-items:center;gap:10px;background:var(--rosso);color:var(--bianco);font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:16px 32px;text-decoration:none;margin:8px}
+.btn-s{display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--bianco);font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:16px 32px;text-decoration:none;border:0.5px solid var(--linea);margin:8px}
+
+footer{padding:32px 48px;border-top:0.5px solid var(--linea);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-logo{font-family:var(--bebas);font-size:16px;letter-spacing:3px;color:var(--grigio)}
+.footer-copy{font-family:var(--mono);font-size:9px;color:rgba(138,133,128,.4)}
+.footer-links{display:flex;gap:20px}
+.footer-links a{font-family:var(--mono);font-size:9px;letter-spacing:2px;color:var(--grigio);text-decoration:none;text-transform:uppercase}
+.footer-links a:hover{color:var(--bianco)}
+
+@media(max-width:768px){
+  nav,.hero,.manifesto-section,.cta-section,footer{padding-left:24px;padding-right:24px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/">
+    <img src="data:image/jpeg;base64,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" alt="Q-Italia">
+    <span class="nav-logo-text">Q-Italia</span>
+  </a>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/#principi">Principi</a>
+    <a href="https://x.com/italia_a741" target="_blank">X →</a>
+    <a href="https://polisim.dev" target="_blank" class="nav-polisim">PoliSim →</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-eyebrow">Italia · 2026 · Versione 3.1</div>
+  <h1 class="hero-title">Manifesto<br>& Carta dei<br>Principi</h1>
+  <p class="hero-sub">14 principi costitutivi organizzati in tre cerchi concentrici. Non è una gerarchia di importanza — ogni principio è inderogabile. È una gerarchia di dipendenza logica: i cerchi interni abilitano quelli esterni.</p>
+</div>
+
+<div class="manifesto-section">
+
+  <div class="manifesto-intro">
+    <h2>Preambolo</h2>
+    <p>Viviamo in un'epoca di trasformazione senza precedenti. Le democrazie del Novecento furono progettate per società a bassa complessità informativa. Oggi la complessità del reale ha superato la capacità cognitiva delle istituzioni.</p>
+    <p>Q-Italia nasce per colmare questo vuoto. Non siamo un movimento tecnocratico, né un'utopia digitale. Siamo cittadine e cittadini che credono che la tecnologia più potente mai creata dall'umanità debba essere governata democraticamente, distribuita equamente e orientata alla pace.</p>
+    <p>Ogni proposta, ogni alleanza, ogni decisione interna dovrà superare il vaglio di coerenza con tutti e tre i cerchi. Se un'azione politica contraddice anche uno solo di questi principi, quell'azione non è di Q-Italia.</p>
+  </div>
+
+  <!-- CERCHIO INTERNO -->
+  <div class="cerchio">
+    <div class="cerchio-label">Cerchio Interno</div>
+    <h2 class="cerchio-title">L'architettura decisionale</h2>
+    <p class="cerchio-desc">Come si governa quando la complessità supera la capacità umana di comprenderla.</p>
+
+    <div class="principio">
+      <div class="principio-header">
+        <span class="principio-num">01</span>
+        <h3 class="principio-nome">Intelligenza Artificiale come Bene Comune</h3>
+      </div>
+      <p class="principio-body">L'intelligenza artificiale è la tecnologia più trasformativa mai creata dall'umanità. Il suo sviluppo non può essere delegato a oligopoli privati né a burocrazie opache. Q-Italia afferma che l'IA è un bene comune: il suo codice, i suoi dati di addestramento e i suoi benefici economici devono essere accessibili, auditabili e redistribuiti democraticamente. Ogni cittadino ha diritto a comprendere, partecipare e incidere sulle decisioni algoritmiche che trasformano la sua vita.</p>
+      <p class="principio-nota">Questo principio è il fondamento identitario del partito e ispira trasversalmente tutti gli altri.</p>
+    </div>
+
+    <div class="principio">
+      <div class="principio-header">
+        <span class="principio-num">02</span>
+        <h3 class="principio-nome">Distillazione Legislativa</h3>
+      </div>
+      <p class="principio-body">L'IA, affiancata dai migliori giuristi, viene impiegata per riscrivere i codici civile e penale eliminando le leggi ad personam, le stratificazioni corrotte e le contraddizioni accumulate in decenni di legislazione emergenziale. L'obiettivo è un corpo normativo snello, logico e comprensibile a ogni cittadino. La legge che non si capisce è una legge che non protegge.</p>
+      <p class="principio-nota">La complessità legislativa italiana è essa stessa una forma di esclusione: chi non può permettersi un avvocato è un cittadino dimezzato.</p>
+    </div>
+
+    <div class="principio">
+      <div class="principio-header">
+        <span class="principio-num">03</span>
+        <h3 class="principio-nome">Trasparenza Immutabile</h3>
+      </div>
+      <p class="principio-body">Ogni passaggio che richiede certezza e fiducia pubblica — appalti, contratti, votazioni, certificazione dei testi di legge — adotta tecnologie di registro distribuito e crittografia avanzata che garantiscano l'incorruttibilità e la verificabilità dei dati. La trasparenza non è una concessione del potere: è un diritto strutturale del cittadino.</p>
+      <p class="principio-nota">Strumenti attuali: blockchain e registri distribuiti. Il principio resta valido indipendentemente dall'evoluzione tecnologica specifica.</p>
+    </div>
+
+    <div class="principio">
+      <div class="principio-header">
+        <span class="principio-num">04</span>
+        <h3 class="principio-nome">Sovranità Informativa</h3>
+      </div>
+      <p class="principio-body">Il collasso del giornalismo indipendente e la manipolazione algoritmica dell'opinione pubblica sono la minaccia più concreta alla democrazia contemporanea. Q-Italia chiede trasparenza obbligatoria sugli algoritmi di raccomandazione, divieto di micro-targeting politico, e finanziamento pubblico strutturale del giornalismo d'inchiesta. I dati personali dei cittadini sono proprietà inalienabile di chi li genera: il loro uso commerciale richiede consenso esplicito, granulare e revocabile in ogni momento.</p>
+      <p class="principio-nota">La democrazia è impossibile se l'informazione che la alimenta è manipolata o privatizzata.</p>
+    </div>
+  </div>
+
+  <!-- CERCHIO INTERMEDIO -->
+  <div class="cerchio">
+    <div class="cerchio-label">Cerchio Intermedio</div>
+    <h2 class="cerchio-title">I principi di convivenza razionale</h2>
+    <p class="cerchio-desc">Le regole della vita in comune che discendono dalla logica prima ancora che dall'etica.</p>
+
+    <div class="principio">
+      <div class="principio-header">
+        <span class="principio-num">05</span>
+        <h3 class="principio-nome">Razionalità Pacifista</h3>
+      </div>
+      <p class="principio-body">La violenza organizzata è un'allocazione irrazionale di risorse che produce esternalità negative per tutti gli attori coinvolti, incluso il vincitore. Ogni conflitto armato è fondato su interessi economici e dinamiche di supremazia: non esistono guerre umanitarie o preventive. La risposta razionale non è la forza né la sottomissione, ma la costruzione di sistemi di interdipendenza che rendano l'aggressione antieconomica per chiunque.</p>
+      <p class="principio-body">L'Italia si sottrae progressivamente a ogni obbligo militare offensivo e ridefinisce il proprio ruolo internazionale: non più proiezione di forza, ma hub di mediazione diplomatica, soccorso umanitario e capacità logistico-organizzativa. La potenza di un paese non si misura in arsenali: si misura nella sua capacità di essere indispensabile alla pace.</p>
+    </div>
+
+    <div class="principio">
+      <div class="principio-header">
+        <span class="principio-num">06</span>
+        <h3 class="principio-nome">Giustizia Rigenerativa</h3>
+      </div>
+      <p class="principio-body">Il sistema penale abbandona la funzione punitiva e la vendetta di Stato. La punizione non migliora l'uomo: lo incattivisce. Il carcere è sostituito da percorsi di rieducazione fondati sulle neuroscienze e sulla giustizia riparativa, che ricostruiscano la relazione tra chi ha commesso il danno e chi lo ha subito. Abolizione totale della pena di morte in ogni dispositivo penale.</p>
+      <p class="principio-nota">Riferimenti: modelli scandinavi di giustizia riparativa, esperienza di Nils Christie, programmi neozelandesi di restorative justice, Halden Prison (Norvegia).</p>
+    </div>
+
+    <div class="principio">
+      <div class="principio-header">
+        <span class="principio-num">07</span>
+        <h3 class="principio-nome">Autodeterminazione e Salute</h3>
+      </div>
+      <p class="principio-body">Ogni persona è sovrana sul proprio corpo e sulla propria vita. Questo principio fonda il diritto all'eutanasia come suprema espressione di autodeterminazione, il diritto alla salute riproduttiva, e il rifiuto di ogni interferenza statale sulle scelte che riguardano esclusivamente l'individuo e il suo corpo. Lo Stato non è padrone della vita dei cittadini: ne è custode.</p>
+      <p class="principio-body">La salute è il presupposto materiale di ogni libertà. AItalia afferma che la sanità pubblica è infrastruttura fondamentale della democrazia: universale, gratuita al punto di utilizzo, orientata alla prevenzione prima che alla cura.</p>
+    </div>
+
+    <div class="principio">
+      <div class="principio-header">
+        <span class="principio-num">08</span>
+        <h3 class="principio-nome">Soccorso Universale e Integrazione</h3>
+      </div>
+      <p class="principio-body">Il salvataggio di chi è in pericolo di vita è un obbligo assoluto, senza eccezioni di nazionalità, status o condizione. Non è generosità: è la condizione minima di una civiltà che si dice tale.</p>
+      <p class="principio-body">L'integrazione non è un costo da contenere: è un processo che, gestito con intelligenza e risorse adeguate, genera valore economico, demografico e culturale per le comunità che accolgono. La contaminazione tra culture è storicamente il motore del progresso.</p>
+    </div>
+
+    <div class="principio">
+      <div class="principio-header">
+        <span class="principio-num">09</span>
+        <h3 class="principio-nome">Proporzionalità tra Potere e Responsabilità</h3>
+      </div>
+      <p class="principio-body">Chi esercita funzioni pubbliche o detiene potere esecutivo risponde delle proprie azioni con standard più elevati di chi non ha tale responsabilità. Non perché il potere sia un privilegio da punire, ma perché ogni mandato pubblico è un patto di fiducia con la collettività: la sua violazione produce un danno sistemico, non individuale.</p>
+      <p class="principio-nota">Una democrazia matura non cerca vendetta: cerca proporzionalità tra potere ricevuto e responsabilità assunta. Chi più decide, più risponde.</p>
+    </div>
+  </div>
+
+  <!-- CERCHIO ESTERNO -->
+  <div class="cerchio">
+    <div class="cerchio-label">Cerchio Esterno</div>
+    <h2 class="cerchio-title">La visione di società</h2>
+    <p class="cerchio-desc">Il mondo che vogliamo costruire quando l'architettura funziona e le regole sono chiare.</p>
+
+    <div class="principio">
+      <div class="principio-header">
+        <span class="principio-num">10</span>
+        <h3 class="principio-nome">Uguaglianza Strutturale</h3>
+      </div>
+      <p class="principio-body">Q-Italia promuove una società orizzontale dove nessuna gerarchia di genere, identità, orientamento, origine o condizione determina la posizione di potere o il valore della persona. La decostruzione dei modelli di dominio — patriarcali, classisti, abilisti — non è un'agenda ideologica: è un prerequisito logico dell'uguaglianza. Una società che spreca il talento di metà dei suoi membri è una società che compete con una mano legata dietro la schiena.</p>
+    </div>
+
+    <div class="principio">
+      <div class="principio-header">
+        <span class="principio-num">11</span>
+        <h3 class="principio-nome">Oltre la Crescita Infinita</h3>
+      </div>
+      <p class="principio-body">Il benessere di una nazione non si misura in crescita del PIL ma in riduzione della sofferenza evitabile. Il paradigma della crescita infinita in un pianeta finito non è un'opinione ecologista: è un errore aritmetico. Q-Italia promuove un modello economico che misuri il progresso in salute, istruzione, qualità ambientale, tempo libero e coesione sociale.</p>
+      <p class="principio-body">L'automazione intelligente deve liberare tempo umano, non comprimere salari. Q-Italia sostiene la progressiva riduzione dell'orario di lavoro man mano che la produttività aumenta, e l'esplorazione di forme di reddito universale di base che disaccoppino la dignità economica dal mercato del lavoro.</p>
+      <p class="principio-nota">Indicatori di riferimento: Genuine Progress Indicator (GPI), Better Life Index (OCSE), Human Development Index (ONU).</p>
+    </div>
+
+    <div class="principio">
+      <div class="principio-header">
+        <span class="principio-num">12</span>
+        <h3 class="principio-nome">Rinascimento Permanente</h3>
+      </div>
+      <p class="principio-body">Arte, Cultura, Scuola e Ricerca sono le infrastrutture critiche della nazione. Il metodo rinascimentale — interdisciplinarità, unione di arte e scienza, pensiero sistemico — è il modello di governo. Un Paese che taglia la cultura per finanziare le emergenze è un Paese che sta bruciando i mobili per scaldare la casa.</p>
+      <p class="principio-body">L'istruzione pubblica è l'atto politico più radicale che uno Stato possa compiere: formare cittadini capaci di pensiero critico, non consumatori di certezze preconfezionate. La ricerca pubblica, libera da logiche di profitto a breve termine, è la condizione del progresso a lungo termine.</p>
+    </div>
+
+    <div class="principio">
+      <div class="principio-header">
+        <span class="principio-num">13</span>
+        <h3 class="principio-nome">Ecologia della Bellezza</h3>
+      </div>
+      <p class="principio-body">Tutela assoluta del paesaggio italiano — mare, montagna, collina, pianura. Rifiuto del turismo aggressivo e consumistico. Il paesaggio non è una risorsa da sfruttare: è un patrimonio da custodire.</p>
+      <p class="principio-body">Il paesaggio è ecosistema. La biodiversità — animale, vegetale, microbica — non è un ornamento della natura ma la rete di relazioni che rende possibile la vita. Gli animali, senzienti e capaci di soffrire, non sono risorse produttive né oggetti di intrattenimento: il loro benessere è una misura diretta del grado di civiltà di una società.</p>
+    </div>
+
+    <div class="principio">
+      <div class="principio-header">
+        <span class="principio-num">14</span>
+        <h3 class="principio-nome">Accessibilità Universale</h3>
+      </div>
+      <p class="principio-body">L'agibilità di ogni luogo fisico e digitale per le persone con disabilità o abilità ridotte è un presupposto della libertà, non una gentilezza. Ogni barriera architettonica, sensoriale o digitale è una violazione del patto sociale. Design universale per una società senza esclusi. L'accessibilità non è un capitolo di spesa: è il test definitivo di una società che si dice egualitaria.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="cta-section">
+  <h2 class="cta-title">Q-Italia esiste<br>per tenere insieme<br>tutti e tre i <em>livelli</em>.</h2>
+  <div>
+    <a href="https://x.com/italia_a741" target="_blank" class="btn-r">Seguici su X →</a>
+    <a href="https://polisim.dev" target="_blank" class="btn-s">PoliSim — lo strumento ↗</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Q-Italia</div>
+  <div class="footer-copy">© 2026 Q-Italia · Italia · Versione 3.1</div>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/manifesto.html">Manifesto</a>
+    <a href="mailto:info@qitalia.org">Contatto</a>
+  </div>
+</footer>
+
+</body>
+</html>
